@@ -2,7 +2,9 @@
 FROM openjdk:21-jdk-slim AS build-java
 WORKDIR /app
 COPY . /app
-RUN ./mvnw clean package -DskipTests
+RUN chmod +x gradlew
+RUN ./gradlew processResources
+RUN ./gradlew bootJar --no-daemon
 
 # Stage 2: Build the frontend with npm
 FROM node:16-alpine AS build-frontend
