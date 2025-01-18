@@ -1,12 +1,17 @@
-FROM ubuntu:latest AS build
+FROM openjdk:21-jdk-slim AS build
 WORKDIR /app
 COPY . .
-RUN apt-get update
-RUN apt-get install openjdk-21-jdk -y
+COPY --from=build-npm /app/npm ./npm
 RUN chmod +x gradlew
-RUN cd npm; apt install -y nodejs; apt install -y npm; npm install;
 RUN ./gradlew processResources
 RUN ./gradlew bootJar --no-daemon
+
+FROM node:16-alpine AS build-npm
+WORKDIR /app
+COPY . .
+RUN cd npm; npm install
+RUN chmod +x gradlew
+RUN ./gradlew processResources
 
 FROM openjdk:21-jdk-slim
 WORKDIR /app
