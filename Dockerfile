@@ -1,15 +1,15 @@
-FROM openjdk:21-jdk-slim AS build
-WORKDIR /app
-COPY . .
-COPY --from=build-npm ./app/npm /npm
-RUN chmod +x gradlew
-RUN ./gradlew processResources
-RUN ./gradlew bootJar --no-daemon
-
 FROM node:16-alpine AS build-npm
 WORKDIR /app
 COPY . .
 RUN cd npm; npm install
+
+FROM openjdk:21-jdk-slim AS build
+WORKDIR /app
+COPY . .
+COPY --from=build-npm /app/npm /npm
+RUN chmod +x gradlew
+RUN ./gradlew processResources
+RUN ./gradlew bootJar --no-daemon
 
 FROM openjdk:21-jdk-slim
 WORKDIR /app
