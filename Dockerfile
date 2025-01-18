@@ -10,10 +10,7 @@ RUN ./gradlew bootJar --no-daemon
 FROM node:16-alpine AS build-frontend
 WORKDIR /app
 COPY . .
-RUN cd npm
-RUN cd npm; ls -alrt
-RUN cd npm; npm install
-CMD ["npm", "start"]
+RUN cd npm; npm install; npm start
 
 FROM openjdk:21-jdk-slim
 WORKDIR /app
