@@ -1,4 +1,5 @@
 FROM ubuntu:latest AS build
+WORKDIR /app
 RUN apt-get update
 RUN apt-get install openjdk-21-jdk -y
 COPY . .
@@ -7,11 +8,15 @@ RUN ./gradlew processResources
 RUN ./gradlew bootJar --no-daemon
 
 FROM node:16-alpine AS build-frontend
+WORKDIR /app
+COPY . .
+RUN cd npm
 RUN ls -alrt
 RUN npm install
-RUN npm run build
+CMD ["npm", "start"]
 
 FROM openjdk:21-jdk-slim
+WORKDIR /app
 EXPOSE 8080
 COPY --from=build-frontend /app/node_modules /app/node_modules
 COPY --from=build /build/libs/pre-anesthesia-1.jar app.jar
