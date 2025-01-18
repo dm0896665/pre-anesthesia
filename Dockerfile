@@ -2,7 +2,6 @@ FROM ubuntu:latest AS build
 WORKDIR /app
 RUN apt-get update
 RUN apt-get install openjdk-21-jdk -y
-COPY . .
 RUN chmod +x gradlew
 RUN ./gradlew processResources
 RUN ./gradlew bootJar --no-daemon
