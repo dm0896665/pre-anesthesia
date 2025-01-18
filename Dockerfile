@@ -4,6 +4,7 @@ COPY . .
 RUN apt-get update
 RUN apt-get install openjdk-21-jdk -y
 RUN chmod +x gradlew
+RUN cd npm; npm install
 RUN cd npm; ls -alrt
 RUN ./gradlew processResources
 RUN ./gradlew bootJar --no-daemon
