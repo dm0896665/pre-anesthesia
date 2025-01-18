@@ -4,11 +4,7 @@ COPY . .
 RUN apt-get update
 RUN apt-get install openjdk-21-jdk -y
 RUN chmod +x gradlew
-RUN apt-get install -y curl \
-  && curl -sL https://deb.nodesource.com/setup_9.x | bash - \
-  && apt-get install -y nodejs \
-  && curl -L https://www.npmjs.com/install.sh | sh
-RUN cd npm; npm install
+RUN cd npm; apt install -y nodejs; apt install -y npm; npm install;
 RUN cd npm; ls -alrt
 RUN ./gradlew processResources
 RUN ./gradlew bootJar --no-daemon
