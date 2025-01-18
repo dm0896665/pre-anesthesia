@@ -1,0 +1,49 @@
+.custom-range input
+{
+  outline: none;
+	-webkit-appearance: none;
+	background-color: #aaa;
+	height: 3px;
+	width: 100%;
+	margin: 10px auto;
+}
+.custom-range-step{
+	position: relative;                
+}
+
+.custom-range-max{
+	float: right;
+}
+.custom-range-step datalist {
+	position:relative;
+	display: flex;
+	justify-content: space-between;
+	height: auto;
+	bottom: 16px;
+	/* disable text selection */
+	-webkit-user-select: none; /* Safari */        
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+/Edge */                
+	user-select: none; /* Standard */
+	/* disable click events */
+	pointer-events:none;  
+}
+.custom-range-step datalist option {
+	width: 10px;
+	height: 10px;
+	min-height: 10px;
+	border-radius: 100px;
+	/* hide text */
+	white-space: nowrap;       
+  padding:0;
+  line-height: 40px;
+}
+.custom-range-step-popup datalist{
+  overflow:hidden;
+}
+.custom-range-step{
+  margin:0 40px;
+}
+.custom-range-step-popup{
+  margin:40px 40px;
+}

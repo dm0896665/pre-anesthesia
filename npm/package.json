@@ -1,0 +1,14 @@
+{
+  "name": "pre-anesthesia",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "dm0896665",
+  "license": "ISC",
+  "dependencies": {
+    "@nobleclem/jquery-multiselect": "^2.4.24"
+  }
+}
