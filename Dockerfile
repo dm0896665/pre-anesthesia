@@ -2,6 +2,7 @@ FROM node:16-alpine AS build-frontend
 WORKDIR /app
 COPY . .
 RUN cd npm; npm install
+RUN chmod +x gradlew
 RUN ./gradlew processResources
 RUN ./gradlew bootJar --no-daemon
 
