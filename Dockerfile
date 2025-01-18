@@ -6,7 +6,7 @@ RUN cd npm; npm install
 FROM openjdk:21-jdk-slim AS build
 WORKDIR /app
 COPY . .
-COPY --from=build-npm /app/npm /npm
+COPY --from=build-npm /app/npm /app/npm
 RUN chmod +x gradlew
 RUN ./gradlew processResources
 RUN ./gradlew bootJar --no-daemon
