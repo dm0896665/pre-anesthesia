@@ -1,3 +1,17 @@
+@font-face {
+  font-family: planetsideHeaderFont;
+  src: url('/font/PlanetSide2.ttf');
+  font-weight: bold;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: planetsideHeaderFont !important;
+}
+
 @media only screen and (max-width: 767px) {
 
   /*for boostrap xs*/
@@ -8,15 +22,14 @@
 
 .main-content {
   margin: 0 auto;
-  padding: 0 2.0rem;
   position: relative;
+}
+
+.main-content:not(:has(.full-width)) {
+  padding: 0 2.0rem;
   width: 80%
 }
 
 footer {
   z-index: 99;
-}
-
-h1.site-title {
-  color: whitesmoke;
 }

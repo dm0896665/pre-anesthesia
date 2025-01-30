@@ -1,3 +1,5 @@
+import '../node_modules/@nobleclem/jquery-multiselect/jquery.multiselect.js';
+
 document.querySelectorAll(".custom-range-step").forEach(function (ctrl) {
 	var el = ctrl.querySelector('input');
 	var output = ctrl.querySelector('output');
@@ -33,3 +35,44 @@ window.onresize = function () {
 		el.oninput();
 	});
 };
+
+$('select[multiple]').multiselect({
+    search: true,
+    selectAll: true,
+    texts: {
+        placeholder: 'Select States',
+        search: 'Search States'
+    }
+});
+
+window.onresize = columnUpdate;
+
+function columnUpdate() {
+    var width = window.innerWidth
+    var columns = 1;
+
+    if (width < 768) {
+        //in mobile
+        if (width > 495) {
+            columns = 2;
+        }
+        if (width > 665) {
+            columns = 3;
+        }
+    } else {
+        //in desktop
+        if (width > 980) {
+            columns = 2;
+        }
+        if (width > 1399) {
+            columns = 3;
+        }
+    }
+
+    // Update the multiselect settings
+    $('select[multiple]').multiselect('settings', { columns: columns });
+    $('select[multiple]').multiselect('reload');
+}
+
+//set columns on load
+columnUpdate();

@@ -32,10 +32,6 @@ public class ApplicationController {
 
     @GetMapping("/")
     public String getHome(Model model) {
-        String welcomeMessage = "Welcome to the web peasant";
-        model.addAttribute("message", welcomeMessage);
-        model.addAttribute("educations", Education.values());
-        model.addAttribute("states", State.values());
         return "index";
     }
 
@@ -55,14 +51,11 @@ public class ApplicationController {
         return "viewResult";
     }
 
-    @GetMapping("/questionnaire")
-    public String getUsers(Model model) {
-//        List<User> users = Stream
-//                .of(new User(1, "John", "USA"), new User(2, "Pitter", "IND"), new User(3, "Washim", "PAK"))
-//                .collect(Collectors.toList());
-//        model.addAttribute("users", users);
-        return "userList";
-
+    @GetMapping("/quiz")
+    public String getQuiz(Model model) {
+        model.addAttribute("educations", Education.values());
+        model.addAttribute("states", State.values());
+        return "quiz";
     }
 
 }
