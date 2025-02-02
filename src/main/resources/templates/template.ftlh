@@ -27,15 +27,15 @@
     </button>
     <header>
       <div id="top-header" class="bg-primary d-flex align-items-center position-relative rounded-bottom">
-        <button id="mobile-nav-toggler" type="button" class="navbar-toggler d-inline-block d-md-none mx-3">
+        <button id="mobile-nav-toggler" type="button" class="navbar-toggler d-inline-block d-lg-none mx-3">
           <i class="fas fa-bars"></i>
         </button>
-        <a class="navbar-brand ps-1 d-none d-md-block" href="/">
+        <a class="navbar-brand ps-1 d-none d-lg-block" href="/">
           <img src="/images/icon.ico" alt="Icon" width="100" />
         </a>
-        <h1 class="py-4 py-md-0 site-title mb-0 display-6">Pre-Anesthesia.com</h1>
+        <h1 class="py-4 py-lg-0 site-title mb-0 display-6">Pre-Anesthesia.com</h1>
 
-        <div class="pe-3 pb-2 position-absolute bottom-0 end-0 d-none d-md-block">
+        <div class="pe-3 pb-2 position-absolute bottom-0 end-0 d-none d-lg-block">
           <a id="quiz-link" class="text-decoration-underline fs-5" href="/quiz">Free Career Quiz!</a>
         </div>
       </div>

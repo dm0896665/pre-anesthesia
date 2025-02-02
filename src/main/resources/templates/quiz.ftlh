@@ -17,7 +17,7 @@
     <div class="form-group pt-4">
       <label for="state">What states do you plan on living in the future?</label>
       <div class="row justify-content-center">
-          <div class="col-md-5">
+          <div class="col-lg-5">
               <select id="state" name="states" multiple="multiple" class="3col active form-control">
                   <#list states as state>
                       <option value="${state}">${state.getName()}</option>

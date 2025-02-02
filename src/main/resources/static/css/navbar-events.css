@@ -52,7 +52,7 @@ nav {
 }
 
 /* Small devices make header stick to top */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 991px) {
     header {
         position: -webkit-sticky;
         position: sticky;

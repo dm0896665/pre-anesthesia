@@ -1,6 +1,6 @@
 <div id="side-nav-container">
     <div id="side-nav" class="">
-        <div id="side-nav-nav" class="mt-3 mt-md-2 me-3 me-md-1 mb-2 ms-3 p-2">
+        <div id="side-nav-nav" class="mt-3 mt-lg-2 me-3 me-lg-1 mb-2 ms-3 p-2">
             <h4>
                 <a href="/" class="navlink side-nav-link">Home</a>
             </h4>

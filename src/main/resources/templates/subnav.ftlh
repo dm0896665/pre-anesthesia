@@ -1,4 +1,4 @@
-<nav id="sub-nav" class="navbar d-none d-md-block mt-2 w-100">
+<nav id="sub-nav" class="navbar d-none d-lg-block mt-2 w-100">
     <div id="top-sub-nav" class="row pt-3 ps-0 pe-0 ps-lg-5 pe-lg-5">
         <#list subnav as mainSubNav, subnavlinks>
             <#assign mainSubNavLink="/${mainSubNav?replace(' ', '')}/default">

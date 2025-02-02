@@ -31,7 +31,7 @@
 }
 
 /* Large devices make menu stick to top */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
     #side-menu-container {
         position: -webkit-sticky;
         position: sticky;
@@ -39,7 +39,7 @@
     }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 991px) {
     #side-menu-nav {
         display: none;
     }
