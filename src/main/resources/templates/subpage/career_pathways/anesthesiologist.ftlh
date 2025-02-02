@@ -1,0 +1,10 @@
+<#import "/subpage/career_pathways/careerPathwaysSubpage.ftlh" as layout />
+<@layout.careerPathwaysSubpage title="Anesthesiologist">
+<img id="anesthesiologist-image" class="mx-auto d-block" src="/images/subpage/career_pathways/anesthesiologist.png" alt="Anesthesiologist at work" />
+<p class="mt-3">Anesthesiologists are physician anesthesia providers. Being the head of Anesthesia Care Teams with the ability to practice solo allows Anesthesiologists to choose between supervisory or individual roles. After completing 4 years of undergraduate course work, taking the <a href="#">MCAT</a> and attending medical school for 4 years, they can finally attend a 4-year Anesthesiologist school or Residency. This is the part of the journey most Medical TV Shows start with their main character such as Meredith Grey in Grey's Anatomy or J.D. in Scrubs. Residency for Anesthesiologist's last 4 years and comes with pay starting in the mid $60,000's and tapers around $80,000k in year 4. (<a href="https://gme.wustl.edu/policies-procedures/stipends/">source</a>)</p>
+
+
+
+<a>During Residency, Anesthesiologists work 50-60 hours a week. They spend about the same amount of time per week studying/going to class in medical school however you have to pay for schooling. The average medical school debt is more than $240,000. (<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10396319/#:~:text=Currently%2C%20the%20average%20medical%20school,the%20form%20of%20accumulated%20interest">source</a>). Once out of residency, Anesthesiologists reap the rewards with salaries starting out at $400k and can reach over $1.2 million.</p>
+<link rel="stylesheet" href="/css/subpage/career_pathways/anesthesiologist.css" />
+</@layout.careerPathwaysSubpage>

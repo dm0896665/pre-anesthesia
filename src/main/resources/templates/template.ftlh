@@ -23,79 +23,37 @@
     <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body>
-    <header class="sticky-top">
-      <div id="top-header" class="bg-primary d-none d-md-flex align-items-center position-relative rounded-bottom">
-        <a class="navbar-brand ps-1" href="/">
-          <img src="/images/icon.ico" alt="Icon" width="100">
+    <button type="button" class="btn btn-primary btn-floating btn-lg btn-circle" id="back-to-top">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+    <header>
+      <div id="top-header" class="bg-primary d-flex align-items-center position-relative rounded-bottom">
+        <button id="mobile-nav-toggler" type="button" class="navbar-toggler d-inline-block d-md-none mx-3">
+          <i class="fas fa-bars"></i>
+        </button>
+        <a class="navbar-brand ps-1 d-none d-md-block" href="/">
+          <img src="/images/icon.ico" alt="Icon" width="100" />
         </a>
-        <h1 class="site-title mb-0">Pre-Anesthesia.com</h1>
+        <h1 class="py-4 py-md-0 site-title mb-0 display-6">Pre-Anesthesia.com</h1>
 
         <div class="pe-3 pb-2 position-absolute bottom-0 end-0">
           <a id="quiz-link" class="text-decoration-underline fs-5" href="/quiz">Free Career Quiz!</a>
         </div>
       </div>
-      <nav id="sub-nav" class="navbar d-none d-md-block mt-2 w-100">
-        <div id="top-sub-nav" class="row pt-3 ps-0 pe-0 ps-lg-5 pe-lg-5">
-          <div class="col-4">
-            <a class="nav-link border border-secondary border-top-0 border-bottom-0 border-right-0" href="#">Career Pathways</a>
-          </div>
-          <div class="col-4">
-            <a class="nav-link border border-secondary border-top-0 border-bottom-0 border-right-0" href="#">Learn Anesthesia</a>
-          </div>
-          <div class="col-4">
-            <a class="nav-link border border-secondary border-top-0 border-bottom-0" href="#">Prep courses</a>
-          </div>
-        </div>
-        <div id="bottom-sub-nav" class="position-absolute w-100">
-          <div class="row ps-0 pe-0 ps-lg-5 pe-lg-5">
-            <div class="col-4">
-              <a class="nav-link border border-secondary border-top-0 border-bottom-0 border-right-0" href="#">Anesthesiologist</a>
-              <a class="nav-link border border-secondary border-top-0 border-bottom-0 border-right-0" href="#">AA</a>
-              <a class="nav-link border border-secondary border-top-0 border-bottom-0 border-right-0" href="#">CRNA</a>
-              <a class="nav-link border border-secondary border-top-0 border-bottom-0 border-right-0" href="#">Compare Pathways</a>
-            </div>
-            <div class="col-4">
-              <a class="nav-link border border-secondary border-top-0 border-bottom-0 border-right-0" href="#">Simulators</a>
-              <a class="nav-link border border-secondary border-top-0 border-bottom-0 border-right-0" href="#">Videos</a>
-              <a class="nav-link border border-secondary border-top-0 border-bottom-0 border-right-0" href="#">Propaganda, Legislation, and Jargon</a>
-              <a class="nav-link border border-secondary border-top-0 border-bottom-0 border-right-0" href="#">ACLS</a>
-            </div>
-            <div class="col-4">
-              <a class="nav-link border border-secondary border-top-0 border-bottom-0" href="#">MCAT</a>
-              <a class="nav-link border border-secondary border-top-0 border-bottom-0" href="#">GRE</a>
-              <a class="nav-link border border-secondary border-top-0 border-bottom-0" href="#">CCRN</a>
-              <a class="nav-link border border-secondary border-top-0 border-bottom-0" href="#">HESI</a>
-            </div>
-          </div>
-        </div>
-      </nav>
     </header>
+    <div id="page-hider" class="w-100 h-100 hide position-absolute top-0 left-0"></div>
+
+    <#assign careerLinks=['Anesthesiologist', 'AA', 'CRNA', 'Compare Pathways']>
+    <#assign learnLinks=['Simulators', 'Videos', 'Propaganda, Legislation, and Jargon', 'ACLS']>
+    <#assign prepLinks=['MCAT', 'GRE', 'CCRN', 'HESI']>
+    <#assign subnav={'Career Pathways':careerLinks, 'Learn Anesthesia':learnLinks, 'Prep Courses':prepLinks}>
+    <#include "/sideNav.ftlh">
+    <#include "/subnav.ftlh">
     <div class="main-content">
       <#nested />
     </div>
-    <footer>
-      <nav class="navbar navbar-expand-md navbar-dark main-nav d-md-none fixed-bottom bottom-nav">
-
-        <div class="bottom-navbar collapse navbar-collapse" id="mobile-main-nav-menu">
-          <ul class="navbar-nav">
-            <li class="nav-item page-nav">
-              <a class="static-nav-link nav-link" href="/">Home</a>
-            </li>
-            <li class="nav-item page-nav">
-              <a class="static-nav-link nav-link" href="/about">About</a>
-            </li>
-            <li class="nav-item page-nav">
-              <a class="static-nav-link nav-link" href="/results">Results</a>
-            </li>
-          </ul>
-        </div>
-          <h1 class="site-title">Pre-Anesthesia</h1>
-        <button class="navbar-toggler collapsed" data-toggle="collapse" data-target="#mobile-main-nav-menu">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      </nav>
-    </footer>
     <script type="module" src="/js/nav.js"></script>
+    <script type="module" src="/js/scroll-to-top.js"></script>
   </body>
 </html>
 </#macro>

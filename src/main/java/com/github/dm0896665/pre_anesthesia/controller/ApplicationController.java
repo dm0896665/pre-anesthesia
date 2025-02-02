@@ -1,28 +1,17 @@
 package com.github.dm0896665.pre_anesthesia.controller;
 
 import com.github.dm0896665.pre_anesthesia.model.Education;
-import com.github.dm0896665.pre_anesthesia.model.Result;
 import com.github.dm0896665.pre_anesthesia.model.ResultFormSubmission;
 import com.github.dm0896665.pre_anesthesia.model.State;
 import com.github.dm0896665.pre_anesthesia.service.IResultService;
-import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.util.MultiValueMap;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
-
-import java.io.IOException;
-import java.util.List;
-import java.util.Map;
 
 @Controller
 public class ApplicationController {

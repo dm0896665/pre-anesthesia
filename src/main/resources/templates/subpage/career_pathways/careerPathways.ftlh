@@ -1,0 +1,6 @@
+<#import "/subpage/career_pathways/careerPathwaysSubpage.ftlh" as layout />
+<@layout.careerPathwaysSubpage>
+<img id="career-pathways-image" class="mx-auto d-block" src="/images/subpage/career_pathways/three_pathways.png" alt="Pathways to becoming an Anesthesiologist" />
+<p class="mt-3">There are 3 distinct career pathways in the world of anesthesia. The distinction is made less with their job duties and more with their training. Yet these duties can vary between which setting you are working: Level 1 Trauma Center, Ambulatory Surgical Center, Eye Clinic etc. What remains the same throughout every path and work setting is a person is putting their life in your hands. If you are interested in seeing which career pathway lines up best with you take our <a href="/quiz">Free Career Quiz!</a></p>
+<link rel="stylesheet" href="/css/subpage/career_pathways/career-pathways.css" />
+</@layout.careerPathwaysSubpage>
