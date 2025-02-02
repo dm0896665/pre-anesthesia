@@ -47,4 +47,9 @@ public class ApplicationController {
         return "quiz";
     }
 
+    @GetMapping("/error")
+    public String getError(Model model) {
+        return "error";
+    }
+
 }
