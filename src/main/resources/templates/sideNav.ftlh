@@ -4,6 +4,11 @@
             <h4>
                 <a href="/" class="navlink side-nav-link">Home</a>
             </h4>
+            <ul class="navbar-nav me-auto pt-0">
+                <li>
+                    <a href="/quiz" class="navlink">Free Career Quiz!</a>
+                </li>
+            </ul>
             <hr class="menu-nav-splitter">
             <#list subnav as mainSideNav, sideNavLinks>
                 <#assign mainSideNavLink="/${mainSideNav?replace(' ', '')}">

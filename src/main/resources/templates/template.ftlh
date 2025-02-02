@@ -36,12 +36,12 @@
         </a>
         <h1 class="py-4 py-md-0 site-title mb-0 display-6">Pre-Anesthesia.com</h1>
 
-        <div class="pe-3 pb-2 position-absolute bottom-0 end-0">
+        <div class="pe-3 pb-2 position-absolute bottom-0 end-0 d-none d-md-block">
           <a id="quiz-link" class="text-decoration-underline fs-5" href="/quiz">Free Career Quiz!</a>
         </div>
       </div>
     </header>
-    <div id="page-hider" class="w-100 h-100 hide position-absolute top-0 left-0"></div>
+    <div id="page-hider" class="w-100 h-100 hide position-fixed top-0 left-0"></div>
 
     <#assign careerLinks=['Anesthesiologist', 'AA', 'CRNA', 'Compare Pathways']>
     <#assign learnLinks=['Simulators', 'Videos', 'Propaganda, Legislation, and Jargon', 'ACLS']>

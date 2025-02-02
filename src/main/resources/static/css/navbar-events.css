@@ -150,6 +150,10 @@ nav .nav-link {
 }
 
 #page-hider {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
     display: block;
     background-color: rgba(0, 0, 0, .7);
     z-index: 99
@@ -157,7 +161,7 @@ nav .nav-link {
 
 #side-nav-container {
     background-color: white;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     height: 100%;
