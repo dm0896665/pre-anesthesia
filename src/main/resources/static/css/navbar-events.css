@@ -71,11 +71,6 @@ header {
   color: whitesmoke;
 }
 
-#top-header {
-  border-bottom-right-radius: 0.50rem !important;
-  border-bottom-left-radius: 0.50rem !important;
-}
-
 #quiz-link {
   color: whitesmoke;
 }
@@ -105,10 +100,6 @@ nav .nav-link {
 }
 
 #top-sub-nav {
-  border-top-right-radius: 0.50rem !important;
-  border-top-left-radius: 0.50rem !important;
-  border-bottom-right-radius: 0.50rem !important;
-  border-bottom-left-radius: 0.50rem !important;
   background-color: #03A9F4;
   width: 100%;
 }

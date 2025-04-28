@@ -26,7 +26,7 @@
       <i class="fas fa-chevron-up"></i>
     </button>
     <header>
-      <div id="top-header" class="bg-primary d-flex align-items-center position-relative rounded-bottom">
+      <div id="top-header" class="bg-primary d-flex align-items-center position-relative">
         <button id="mobile-nav-toggler" type="button" class="navbar-toggler d-inline-block d-lg-none mx-3">
           <i class="fas fa-bars"></i>
         </button>
