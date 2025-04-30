@@ -53,6 +53,14 @@ body, html {
   font-size: 11px;
 }
 
-html {
+html, body {
     background-color: whitesmoke;
+}
+
+@media only screen and (max-width: 991px) {
+    .main-content {
+        margin: 0 !important;
+        width: 100% !important;
+        padding: 0 1rem 3rem 1rem !important;
+    }
 }
