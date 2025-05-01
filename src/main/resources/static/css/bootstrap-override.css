@@ -452,6 +452,10 @@ h6,
   line-height: 1.2;
 }
 
+.display-10 {
+  font-size: calc(.5rem + .4vw);
+}
+
 hr {
   margin-top: 1rem;
   margin-bottom: 1rem;

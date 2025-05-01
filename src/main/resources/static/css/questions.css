@@ -1,0 +1,18 @@
+#education-value {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+
+@media only screen and (max-width: 991px) {
+    #educations {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    #education-value {
+        display: none;
+    }
+}

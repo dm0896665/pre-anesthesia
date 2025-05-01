@@ -1,59 +1,77 @@
 import '../node_modules/@nobleclem/jquery-multiselect/jquery.multiselect.js';
 
-document.querySelectorAll(".custom-range-step").forEach(function (ctrl) {
-	var el = ctrl.querySelector('input');
-	var output = ctrl.querySelector('output');
-	el.oninput = function () {
-		// colorize step options
-		ctrl.querySelectorAll("option").forEach(function (opt) {
-			if (opt.value <= el.valueAsNumber)
-				opt.style.backgroundColor = 'green';
-			else
-				opt.style.backgroundColor = '#aaa';
-		});
-		// colorize before and after
-		var valPercent = (el.valueAsNumber - parseInt(el.min)) / (parseInt(el.max) - parseInt(el.min));
-		var style = 'background-image: -webkit-gradient(linear, 0% 0%, 100% 0%, color-stop(' +
-			valPercent + ', green), color-stop(' +
-			valPercent + ', #aaa));';
-		el.style = style;
-
-		// Popup
-		if ((' ' + ctrl.className + ' ').indexOf(' ' + 'custom-range-step-popup' + ' ') > -1) {
-			var selectedOpt = ctrl.querySelector('option[value="' + el.value + '"]');
-			output.innerText = selectedOpt.text;
-			output.style.left = "50%";
-			output.style.left = ((selectedOpt.offsetLeft + selectedOpt.offsetWidth / 2) - output.offsetWidth / 2) + 'px';
-		}
-	};
-	el.oninput();
-});
-
-window.onresize = function () {
-	document.querySelectorAll(".custom-range").forEach(function (ctrl) {
-		var el = ctrl.querySelector('input');
-		el.oninput();
+function initCustomRange() {
+	document.querySelectorAll(".custom-range-step").forEach(function (ctrl) {
+		ctrl.querySelector('input').oninput = onCustomRangeInput;
+		onCustomRangeInput(ctrl);
 	});
-};
+}
 
-$('select[multiple]').multiselect({
-    search: true,
-    selectAll: true,
-    texts: {
-        placeholder: 'Select States',
-        search: 'Search States'
-    }
-});
+function onCustomRangeInput(ctrl) {
+	if (ctrl == undefined) {
+		return;
+	}
+	if (ctrl.target != null || ctrl.target != undefined) {
+		ctrl = ctrl.target.parentElement;
+	}
+	let el = ctrl.querySelector('input');
+	let output = ctrl.querySelector('output');
+	let options = ctrl.querySelectorAll("option");
 
-window.onresize = columnUpdate;
+	// colorize step options
+	options.forEach(function (opt) {
+		if (findIndexOfElementWithInnerText(options, opt.value) < el.valueAsNumber)
+			opt.style.backgroundColor = 'blue';
+		else
+			opt.style.backgroundColor = '#aaa';
+	});
+	// colorize before and after
+	let valPercent = (el.valueAsNumber - parseInt(el.min)) / (parseInt(el.max) - parseInt(el.min));
+	let style = 'background-image: -webkit-gradient(linear, 0% 0%, 100% 0%, color-stop(' +
+		valPercent + ', blue), color-stop(' +
+		valPercent + ', #aaa));';
+	el.style = style;
+	output.innerHTML = options[el.value - 1].innerText;
+}
+
+function findIndexOfElementWithInnerText(nodeList, targetInnerText) {
+	for (let i = 0; i < nodeList.length; i++) {
+		if (nodeList[i].innerText === targetInnerText) {
+			return i; // Return the index if found
+		}
+	}
+	return -1; // Return -1 if not found
+}
+
+/********* State Multi-select *********/
+function initMultiStateSelect() {
+	window.onresize = function () {
+		document.querySelectorAll(".custom-range").forEach(function (ctrl) {
+			let el = ctrl.querySelector('input');
+			el.oninput();
+		});
+	};
+
+	$('select[multiple]').multiselect({
+		search: true,
+		selectAll: true,
+		texts: {
+			placeholder: 'Select States',
+			search: 'Search States'
+		}
+	});
+
+	window.onresize = columnUpdate;
+	columnUpdate();
+}
 
 function columnUpdate() {
-    var width = window.innerWidth
-    var columns = 1;
+    let width = window.innerWidth
+    let columns = 1;
 
-    if (width < 768) {
+    if (width < 991) {
         //in mobile
-        if (width > 495) {
+        if (width > 473) {
             columns = 2;
         }
         if (width > 665) {
@@ -61,9 +79,7 @@ function columnUpdate() {
         }
     } else {
         //in desktop
-        if (width > 980) {
-            columns = 2;
-        }
+        columns = 2;
         if (width > 1399) {
             columns = 3;
         }
@@ -74,5 +90,10 @@ function columnUpdate() {
     $('select[multiple]').multiselect('reload');
 }
 
-//set columns on load
-columnUpdate();
+/**************** Main ****************/
+function main() {
+	//set columns on load
+	initMultiStateSelect();
+	initCustomRange();
+}
+main();

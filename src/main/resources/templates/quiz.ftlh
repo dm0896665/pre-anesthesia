@@ -8,9 +8,10 @@
           <input name="education" id="education" value="1" type="range" max="${educations?size}" min="1" step="1" list="educations">
           <datalist id="educations">
               <#list educations as education>
-                  <option value="${education}">${education}</option>
+                  <option class="display-10" value="${education}">${education}</option>
               </#list>
           </datalist>
+          <output id="education-value"></output>
       </div>
     </div>
 
@@ -74,6 +75,8 @@
     <button type="submit" class="btn btn-primary mb-2">Submit</button>
   </form>
 </div>
-<link rel="stylesheet" href="/node_modules/@nobleclem/jquery-multiselect/jquery.multiselect.css">
+<link rel="stylesheet" href="/node_modules/@nobleclem/jquery-multiselect/jquery.multiselect.css" />
 <script type="module" src="/js/questions.js"></script>
+<link rel="stylesheet" href="/css/questions.css" />
+<link rel="stylesheet" href="/css/range.css" />
 </@layout.template>

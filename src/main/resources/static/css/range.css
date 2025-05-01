@@ -1,19 +1,13 @@
 .custom-range input
 {
-  outline: none;
+  	outline: none;
 	-webkit-appearance: none;
 	background-color: #aaa;
-	height: 3px;
+	height: 4px;
 	width: 100%;
 	margin: 10px auto;
 }
-.custom-range-step{
-	position: relative;                
-}
 
-.custom-range-max{
-	float: right;
-}
 .custom-range-step datalist {
 	position:relative;
 	display: flex;
@@ -21,12 +15,19 @@
 	height: auto;
 	bottom: 16px;
 	/* disable text selection */
-	-webkit-user-select: none; /* Safari */        
+	-webkit-user-select: none; /* Safari */
 	-moz-user-select: none; /* Firefox */
-	-ms-user-select: none; /* IE10+/Edge */                
+	-ms-user-select: none; /* IE10+/Edge */
 	user-select: none; /* Standard */
 	/* disable click events */
-	pointer-events:none;  
+	pointer-events:none;
+	top: -16px;
+}
+@-moz-document url-prefix() {
+  /* for whatever reason firefox acts different */
+  .custom-range-step datalist {
+	top: -23px;
+  }
 }
 .custom-range-step datalist option {
 	width: 10px;
@@ -34,16 +35,56 @@
 	min-height: 10px;
 	border-radius: 100px;
 	/* hide text */
-	white-space: nowrap;       
-  padding:0;
-  line-height: 40px;
+	white-space: nowrap;
+  	padding:0;
+  	line-height: 40px;
 }
 .custom-range-step-popup datalist{
-  overflow:hidden;
+  	overflow:hidden;
 }
 .custom-range-step{
-  margin:0 40px;
+  	margin:0 40px;
 }
 .custom-range-step-popup{
-  margin:40px 40px;
+  	margin:40px 40px;
+}
+.custom-range input::-webkit-slider-thumb
+{
+	-webkit-appearance: none;
+	width: 10px;
+	height: 10px;
+	background-color: blue;
+	border-radius: 50%;
+	cursor: -moz-grab;
+	cursor: -webkit-grab;
+	position: relative;
+	top: -8px;
+}
+input[type="range"]::-moz-range-track {
+	position: relative;
+	top: 10px;
+}
+
+input[type="range"]::-moz-range-thumb {
+	-webkit-appearance: none;
+	width: 10px;
+	height: 10px;
+	background-color: blue;
+	border-radius: 50%;
+	cursor: -moz-grab;
+	cursor: -webkit-grab;
+	position: relative;
+	top: 10px;
+}
+.custom-range input::-ms-thumb
+{
+	-webkit-appearance: none;
+	width: 10px;
+	height: 10px;
+	background-color: blue;
+	border-radius: 50%;
+	cursor: -moz-grab;
+	cursor: -webkit-grab;
+	position: relative;
+	top: -8px;
 }
