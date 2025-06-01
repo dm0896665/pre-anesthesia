@@ -19,6 +19,7 @@ body, html {
 .main-content {
   margin: 0 auto;
   position: relative;
+  padding-bottom: 5rem;
 }
 
 .main-content:not(:has(.full-width)) {

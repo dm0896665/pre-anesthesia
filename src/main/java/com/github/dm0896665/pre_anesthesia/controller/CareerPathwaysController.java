@@ -24,4 +24,9 @@ public class CareerPathwaysController {
         return "subpage/career_pathways/anesthesiologist";
     }
 
+    @GetMapping("/aa")
+    public String getAa(Model model) {
+        return "subpage/career_pathways/aa";
+    }
+
 }
