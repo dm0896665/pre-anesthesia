@@ -1,6 +1,6 @@
 <#import "/subpage/career_pathways/careerPathwaysSubpage.ftlh" as layout />
 <@layout.careerPathwaysSubpage title="AA">
-<img id="aa-image" class="mx-auto d-block" src="/images/subpage/career_pathways/aa.png" alt="Anesthesiologist Assistant at work" />
+<img id="aa-image" class="mx-auto d-block career-pathways-image" src="/images/subpage/career_pathways/aa.png" alt="Anesthesiologist Assistant at work" />
 <h4 id="Role">Role</h4>
 <p>Anesthesiologist Assistants (AA) are highly-skilled medical professionals who help plan and deliver anesthesia care within the Anesthesia Care Team (ACT) model. The ACT builds a patient-centric team that provides each patient with the safest model of care. Within the ACT, AAs deliver a variety of care techniques under the supervision of a physician anesthesiologist.</p>
 
@@ -32,7 +32,6 @@
 
 <h4 id="JobOutlook">Job Outlook</h4>
 <p>Here's the rub. AAs can currently practice in <a href="https://www.anesthetist.org/about-caas">21 states, Washington DC, and Guam</a>. They are actively fighting at the state and federal levels to achieve the right to practice in all 50 states, but if your heart is set on practicing in one of the states not highlighted, such as New York or California, I would look for a different career instead.</p>
-<img id="aa-map-image" class="mx-auto d-block" src="/images/subpage/career_pathways/aa_authorization_map.png" alt="Anesthesiologist Assistants Practice Authorization Map" />
+<img id="aa-map-image" class="mx-auto d-block career-pathways-image" src="/images/subpage/career_pathways/aa_authorization_map.png" alt="Anesthesiologist Assistants Practice Authorization Map" />
 <p>If you're okay with living in one of the states highlighted, then you're in luck because the job market (and salaries) are booming with a <a href="https://www.careerexplorer.com/careers/anesthesiologist-assistant/job-market/#:~:text=Job%20Market-,The%20job%20market%20for%20anesthesiologist%20assistants%20in%20the%20United%20States,26.6%25%20between%202022%20and%202032">26.6% job growth</a> expected between 2022 and 2032. More schools are opening yearly, and more states are allowing AAs to practice. Most students get <a href="https://med.umkc.edu/academics/degree-and-certificate-programs/msa/program-overview.html">jobs 3-6 months prior to graduation</a>, making a career as an anesthesiologist assistant very rewarding and secure. Visit <a href="https://www.gaswork.com/search/Anesthesiologist-Assistants/Job">gasworks.com</a> to view the various full-time, part-time, and locum work available.</p>
-<link rel="stylesheet" href="/css/subpage/career_pathways/aa.css" />
 </@layout.careerPathwaysSubpage>

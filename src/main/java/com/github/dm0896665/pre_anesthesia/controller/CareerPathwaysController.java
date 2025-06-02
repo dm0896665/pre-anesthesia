@@ -29,4 +29,9 @@ public class CareerPathwaysController {
         return "subpage/career_pathways/aa";
     }
 
+    @GetMapping("/crna")
+    public String getCrna(Model model) {
+        return "subpage/career_pathways/crna";
+    }
+
 }

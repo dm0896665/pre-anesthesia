@@ -1,7 +1,7 @@
 <#import "/subpage/career_pathways/careerPathwaysSubpage.ftlh" as layout />
 <@layout.careerPathwaysSubpage title="Anesthesiologist">
 <figure class="figure w-100 text-center">
-    <img id="anesthesiologist-image" class="mx-auto d-block" src="/images/subpage/career_pathways/anesthesiologist.png" alt="Max Feinstein, MD" />
+    <img id="anesthesiologist-image" class="mx-auto d-block career-pathways-image" src="/images/subpage/career_pathways/anesthesiologist.png" alt="Max Feinstein, MD" />
     <figcaption class="figure-caption">Max Feinstein, MD is an anesthesiologist who makes educational content about anesthesia on <a href="https://www.youtube.com/@MaxFeinsteinMD">YouTube</a>.</figcaption>
 </figure>
 
@@ -50,6 +50,5 @@
 <p>After residency is when you will start to experience great pay with a minimum starting salary of <a href="https://gaswork.com/search/Anesthesiologist/Job">$400,000 all the way up to over $1.2 million</a>, depending on your region, specialty, and workload.</p>
 
 <h4 id="JobOutlook">Job Outlook</h4>
-<a>There continues to be increased job opportunities for anesthesiologists with <a href="https://www.bls.gov/ooh/healthcare/physicians-and-surgeons.htm#tab-6">1,500 openings (4%)</a> projected by 2033. There are multiple work settings for an anesthesiologist, such as hospital operating rooms, outpatient surgery facilities, academic medical centers, and military bases. With the rise of AAs and CRNAs, more jobs are becoming available for supervising anesthesia under the Anesthesia Care Team model.</p>
-<link rel="stylesheet" href="/css/subpage/career_pathways/anesthesiologist.css" />
+<p>There continues to be increased job opportunities for anesthesiologists with <a href="https://www.bls.gov/ooh/healthcare/physicians-and-surgeons.htm#tab-6">1,500 openings (4%)</a> projected by 2033. There are multiple work settings for an anesthesiologist, such as hospital operating rooms, outpatient surgery facilities, academic medical centers, and military bases. With the rise of AAs and CRNAs, more jobs are becoming available for supervising anesthesia under the Anesthesia Care Team model.</p>
 </@layout.careerPathwaysSubpage>
