@@ -34,8 +34,8 @@ public class ApplicationController {
         return "redirect:/results/" + id;
     }
 
-    @GetMapping("/results/{resultNumber}")
-    public String getResult(@PathVariable("resultNumber") Integer resultID, Model model) {
+    @GetMapping("/results/{resultnumber}")
+    public String getResult(@PathVariable("resultnumber") Integer resultID, Model model) {
         model.addAttribute("result", resultService.getResult(resultID));
         return "viewResult";
     }

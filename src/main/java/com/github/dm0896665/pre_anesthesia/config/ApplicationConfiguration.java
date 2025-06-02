@@ -1,8 +1,5 @@
 package com.github.dm0896665.pre_anesthesia.config;
 
-import freemarker.template.TemplateModelException;
-import jakarta.annotation.PostConstruct;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.util.PathMatcher;
@@ -27,7 +24,7 @@ public class ApplicationConfiguration implements WebMvcConfigurer {
      */
     @Bean
     public PathMatcher pathMatcher() {
-        return new CaseInsensitivePathMatcher();
+        return new CaseInsensitiveVariablePathMatcher();
     }
 
     /**
