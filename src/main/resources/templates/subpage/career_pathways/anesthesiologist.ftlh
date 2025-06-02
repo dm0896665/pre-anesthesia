@@ -1,7 +1,7 @@
 <#import "/subpage/career_pathways/careerPathwaysSubpage.ftlh" as layout />
 <@layout.careerPathwaysSubpage title="Anesthesiologist">
 <figure class="figure w-100 text-center">
-    <img id="anesthesiologist-image" class="mx-auto d-block" src="/images/subpage/career_pathways/anesthesiologist.png" alt="Anesthesiologist at work" />
+    <img id="anesthesiologist-image" class="mx-auto d-block" src="/images/subpage/career_pathways/anesthesiologist.png" alt="Max Feinstein, MD" />
     <figcaption class="figure-caption">Max Feinstein, MD is an anesthesiologist who makes educational content about anesthesia on <a href="https://www.youtube.com/@MaxFeinsteinMD">YouTube</a>.</figcaption>
 </figure>
 
