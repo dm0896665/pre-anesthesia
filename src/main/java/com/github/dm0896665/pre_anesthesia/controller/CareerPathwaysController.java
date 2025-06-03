@@ -34,4 +34,9 @@ public class CareerPathwaysController {
         return "subpage/career_pathways/crna";
     }
 
+    @GetMapping("/compare")
+    public String getCompare(Model model) {
+        return "subpage/career_pathways/compare";
+    }
+
 }
