@@ -82,7 +82,7 @@ async function initializeYearDropdown() {
     for (const [year, event] of timelineMap) {
         let option = document.createElement('option');
         let eventString = event.toString();
-        option.innerText = year + (eventString != "" ? "- " : "") + eventString;
+        option.innerText = "Year " + year + (eventString != "" ? "- " : "") + eventString;
         option.value = ""+year;
         option.classList.add('start-year-menu-option');
         startYearMenu.appendChild(option);
@@ -123,7 +123,7 @@ function setYearDurationDropdown(startYear) {
     }
     for (const duration of durations) {
         let option = document.createElement('option');
-        option.innerText = duration;
+        option.innerText = duration + " years";
         option.value = ""+duration;
         durationMenu.appendChild(option);
     }
