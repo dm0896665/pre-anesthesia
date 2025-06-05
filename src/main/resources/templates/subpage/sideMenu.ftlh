@@ -7,7 +7,7 @@
         </div>
         <div id="side-menu-nav" class="mt-3 mt-lg-2 me-3 me-lg-1 mb-2 ms-3 p-2">
             <#list menuNav as mainMenuNav, menuNavLinks>
-                <#assign mainMenuNavLink="/${subpageName?replace(' ', '')?replace('/', '-')}/${mainMenuNav?replace(' ', '')?replace('/', '-')}">
+                <#assign mainMenuNavLink="/${subpageName?replace(' ', '')?replace('/', '-')}/${mainMenuNav?keep_before(' ')?replace('/', '-')}">
                 <h4>
                     <a href="${mainMenuNavLink}" class="navlink main-menu-nav">${mainMenuNav}</a>
                 </h4>
