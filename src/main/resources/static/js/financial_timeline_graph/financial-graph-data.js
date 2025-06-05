@@ -69,10 +69,15 @@ export class FinancialGraphData {
             console.error('Error fetching data:', error);
         }
 
-        let years = financialGraphData.years;
-        let aa = financialGraphData.aa;
-        let crna = financialGraphData.crna;
-        let anesthesiologist = financialGraphData.anesthesiologist;
+        let years = [0];
+        let aa = [0];
+        let crna = [0];
+        let anesthesiologist = [];
+        years.push(financialGraphData.years);
+        aa.push(financialGraphData.aa);
+        crna.push(financialGraphData.crna);
+        anesthesiologist.push(financialGraphData.anesthesiologist);
+        
         FinancialGraphData.fetchedFinancialGraphData = new FinancialGraphData(years, aa, crna, anesthesiologist);
         return FinancialGraphData.fetchedFinancialGraphData;
     }
@@ -124,10 +129,10 @@ export class FinancialGraphData {
     }
 
     static #getFinancialGraphDataFromFinancialTotalsMap(financialTotalsMap) {
-        let years = [];
-        let aa = [];
-        let crna = [];
-        let anesthesiologist = [];
+        let years = [0];
+        let aa = [0];
+        let crna = [0];
+        let anesthesiologist = [0];
         for (const [key, value] of financialTotalsMap) {
             years.push(key);
             aa.push(value["AA"]);

@@ -2,7 +2,7 @@ import {FinancialGraphData} from "./financial-graph-data.js";
 import {CareerTimeline} from "./career-timeline.js";
 
 const defaultStartYear = 1;
-const defaultEndYear = 11;
+const defaultEndYear = 10;
 const financialGraphData = await FinancialGraphData.fetchFinancialGraphData(defaultStartYear,defaultEndYear);
 const aaColor = 'rgb(0,63,92)';
 const crnaColor = 'rgb(122,81,149)';
@@ -96,16 +96,16 @@ async function initializeYearDropdown() {
        let newLastDuration = +durationMenu.options[durationMenu.options.length - 1].value;
        let endYear;
        if (currentDuration + startYear > newLastDuration) {
-           endYear = startYear + newLastDuration;
+           endYear = startYear + newLastDuration - 1;
            durationMenu.value = newLastDuration;
        } else {
-           endYear = startYear + currentDuration;
+           endYear = startYear + currentDuration - 1;
            durationMenu.value = currentDuration;
        }
        updateGraph(startYear, endYear).then(r => console.log("Graph updated."));
     });
     setYearDurationDropdown(defaultStartYear);
-    document.getElementById('duration-menu').value = defaultEndYear - defaultStartYear;
+    document.getElementById('duration-menu').value = defaultEndYear - defaultStartYear + 1;
 }
 
 function setYearDurationDropdown(startYear) {
@@ -116,7 +116,7 @@ function setYearDurationDropdown(startYear) {
     while(true) {
         durations.push(i);
         if (i + 5 > CareerTimeline.fetchedCareerTimelineData.size - startYear) {
-            durations.push(CareerTimeline.fetchedCareerTimelineData.size - startYear);
+            durations.push(CareerTimeline.fetchedCareerTimelineData.size - startYear + 1);
             break;
         }
         i+=5;
@@ -130,7 +130,7 @@ function setYearDurationDropdown(startYear) {
     durationMenu.addEventListener("change", (event) => {
         let startYear = +document.getElementById('start-year-menu').value;
         let duration = +document.getElementById('duration-menu').value;
-        updateGraph(startYear, startYear + duration).then(r => console.log("Graph updated."));
+        updateGraph(startYear, startYear + duration - 1).then(r => console.log("Graph updated."));
     });
 }
 
