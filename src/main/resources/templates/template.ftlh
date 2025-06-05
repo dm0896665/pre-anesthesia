@@ -42,7 +42,7 @@
     <div id="page-hider" class="w-100 h-100 hide position-fixed top-0 left-0"></div>
 
     <#assign careerLinks=['Anesthesiologist', 'AA', 'CRNA', 'Compare Pathways']>
-    <#assign learnLinks=['Simulators', 'Videos', 'Propaganda, Legislation, and Jargon', 'ACLS']>
+    <#assign learnLinks=['Simulators', 'Videos', 'Terminology', 'ACLS']>
     <#assign prepLinks=['MCAT', 'GRE', 'CCRN', 'HESI']>
     <#assign subnav={'Career Pathways':careerLinks, 'Learn Anesthesia':learnLinks, 'Prep Courses':prepLinks}>
     <#include "/sideNav.ftlh">

@@ -28,11 +28,13 @@ export class CareerTimeline {
 }
 export class Event {
     constructor(event) {
+        // If the event has an all property, set 'this.all' and early return
         if ("All" in event) {
             this.all =  event["All"];
             return;
         }
 
+        // Set each variable if it's in the event
         if ("AA" in event) {
             this.aa = event["AA"];
         }
@@ -50,26 +52,33 @@ export class Event {
     anesthesiologist = "";
 
     toString() {
+        // If there is an all string just return that
         if (this.all != "") {
             return this.all;
         }
 
+        // Create a new string with the other variables when they are there
         let s = "";
         if (this.aa != "") {
             s+="AA: " + this.aa;
         }
         if (this.crna != "") {
+            // If this isn't the first event string add a separator
             if (s != "") {
                 s+="; ";
             }
             s+="CRNA: " + this.crna;
         }
         if (this.anesthesiologist != "") {
+            // If this isn't the first event string add a separator
             if (s != "") {
                 s+="; ";
             }
+
             s+="Anesthesiologist: " + this.anesthesiologist;
         }
+
+        // Return created string
         return s;
     }
 }
