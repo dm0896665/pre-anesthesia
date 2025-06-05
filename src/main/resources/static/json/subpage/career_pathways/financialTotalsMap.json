@@ -1,0 +1,242 @@
+{
+  "1": {
+    "AA": -20000,
+    "CRNA": -20000,
+    "Anesthesiologist": -20000
+  },
+  "2": {
+    "AA": -40000,
+    "CRNA": -40000,
+    "Anesthesiologist": -40000
+  },
+  "3": {
+    "AA": -60000,
+    "CRNA": -60000,
+    "Anesthesiologist": -60000
+  },
+  "4": {
+    "AA": -80000,
+    "CRNA": -80000,
+    "Anesthesiologist": -80000
+  },
+  "5": {
+    "AA": -130000,
+    "CRNA": -10000,
+    "Anesthesiologist": -130000
+  },
+  "6": {
+    "AA": -180000,
+    "CRNA": 63000,
+    "Anesthesiologist": -180000
+  },
+  "7": {
+    "AA": 20000,
+    "CRNA": 23000,
+    "Anesthesiologist": -230000
+  },
+  "8": {
+    "AA": 226000,
+    "CRNA": -17000,
+    "Anesthesiologist": -280000
+  },
+  "9": {
+    "AA": 438000,
+    "CRNA": -57000,
+    "Anesthesiologist": -210000
+  },
+  "10": {
+    "AA": 656000,
+    "CRNA": 143000,
+    "Anesthesiologist": -137000
+  },
+  "11": {
+    "AA": 880000,
+    "CRNA": 349000,
+    "Anesthesiologist": -61000
+  },
+  "12": {
+    "AA": 1110000,
+    "CRNA": 561000,
+    "Anesthesiologist": 19000
+  },
+  "13": {
+    "AA": 1346000,
+    "CRNA": 779000,
+    "Anesthesiologist": 419000
+  },
+  "14": {
+    "AA": 1588000,
+    "CRNA": 1003000,
+    "Anesthesiologist": 831000
+  },
+  "15": {
+    "AA": 1836000,
+    "CRNA": 1233000,
+    "Anesthesiologist": 1255000
+  },
+  "16": {
+    "AA": 2090000,
+    "CRNA": 1469000,
+    "Anesthesiologist": 1691000
+  },
+  "17": {
+    "AA": 2350000,
+    "CRNA": 1711000,
+    "Anesthesiologist": 2139000
+  },
+  "18": {
+    "AA": 2616000,
+    "CRNA": 1959000,
+    "Anesthesiologist": 2599000
+  },
+  "19": {
+    "AA": 2888000,
+    "CRNA": 2213000,
+    "Anesthesiologist": 3071000
+  },
+  "20": {
+    "AA": 3166000,
+    "CRNA": 2473000,
+    "Anesthesiologist": 3555000
+  },
+  "21": {
+    "AA": 3450000,
+    "CRNA": 2739000,
+    "Anesthesiologist": 4051000
+  },
+  "22": {
+    "AA": 3740000,
+    "CRNA": 3011000,
+    "Anesthesiologist": 4559000
+  },
+  "23": {
+    "AA": 4036000,
+    "CRNA": 3289000,
+    "Anesthesiologist": 5079000
+  },
+  "24": {
+    "AA": 4338000,
+    "CRNA": 3573000,
+    "Anesthesiologist": 5611000
+  },
+  "25": {
+    "AA": 4646000,
+    "CRNA": 3863000,
+    "Anesthesiologist": 6155000
+  },
+  "26": {
+    "AA": 4954000,
+    "CRNA": 4159000,
+    "Anesthesiologist": 6711000
+  },
+  "27": {
+    "AA": 5262000,
+    "CRNA": 4461000,
+    "Anesthesiologist": 7279000
+  },
+  "28": {
+    "AA": 5570000,
+    "CRNA": 4769000,
+    "Anesthesiologist": 7859000
+  },
+  "29": {
+    "AA": 5878000,
+    "CRNA": 5077000,
+    "Anesthesiologist": 8451000
+  },
+  "30": {
+    "AA": 6186000,
+    "CRNA": 5385000,
+    "Anesthesiologist": 9055000
+  },
+  "31": {
+    "AA": 6494000,
+    "CRNA": 5693000,
+    "Anesthesiologist": 9659000
+  },
+  "32": {
+    "AA": 6802000,
+    "CRNA": 6001000,
+    "Anesthesiologist": 10263000
+  },
+  "33": {
+    "AA": 7110000,
+    "CRNA": 6309000,
+    "Anesthesiologist": 10867000
+  },
+  "34": {
+    "AA": 7418000,
+    "CRNA": 6617000,
+    "Anesthesiologist": 11471000
+  },
+  "35": {
+    "AA": 7726000,
+    "CRNA": 6925000,
+    "Anesthesiologist": 12075000
+  },
+  "36": {
+    "AA": 8034000,
+    "CRNA": 7233000,
+    "Anesthesiologist": 12679000
+  },
+  "37": {
+    "AA": 8342000,
+    "CRNA": 7541000,
+    "Anesthesiologist": 13283000
+  },
+  "38": {
+    "AA": 8650000,
+    "CRNA": 7849000,
+    "Anesthesiologist": 13887000
+  },
+  "39": {
+    "AA": 8958000,
+    "CRNA": 8157000,
+    "Anesthesiologist": 14491000
+  },
+  "40": {
+    "AA": 9266000,
+    "CRNA": 8465000,
+    "Anesthesiologist": 15095000
+  },
+  "41": {
+    "AA": 9574000,
+    "CRNA": 8773000,
+    "Anesthesiologist": 15699000
+  },
+  "42": {
+    "AA": 9882000,
+    "CRNA": 9081000,
+    "Anesthesiologist": 16303000
+  },
+  "43": {
+    "AA": 10190000,
+    "CRNA": 9389000,
+    "Anesthesiologist": 16907000
+  },
+  "44": {
+    "AA": 10498000,
+    "CRNA": 9697000,
+    "Anesthesiologist": 17511000
+  },
+  "45": {
+    "AA": 10806000,
+    "CRNA": 10005000,
+    "Anesthesiologist": 18115000
+  },
+  "46": {
+    "AA": 11114000,
+    "CRNA": 10313000,
+    "Anesthesiologist": 18719000
+  },
+  "47": {
+    "AA": 11422000,
+    "CRNA": 10621000,
+    "Anesthesiologist": 19323000
+  },
+  "48": {
+    "AA": 11730000,
+    "CRNA": 10929000,
+    "Anesthesiologist": 19927000
+  }
+}

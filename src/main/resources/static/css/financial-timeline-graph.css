@@ -1,0 +1,11 @@
+#start-year-menu, #duration-menu {
+    white-space: pre-wrap;
+    height: unset !important;
+    min-height: 38px;
+}
+
+#start-year-menu > .start-year-menu-option {
+    white-space: pre-wrap;
+    height: unset !important;
+    min-height: 38px;
+}
