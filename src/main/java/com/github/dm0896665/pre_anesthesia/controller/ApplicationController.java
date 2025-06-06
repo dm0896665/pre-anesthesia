@@ -1,5 +1,7 @@
 package com.github.dm0896665.pre_anesthesia.controller;
 
+import com.github.dm0896665.pre_anesthesia.model.Education;
+import com.github.dm0896665.pre_anesthesia.model.State;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
