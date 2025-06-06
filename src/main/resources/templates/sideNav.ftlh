@@ -18,7 +18,7 @@
                 <ul class="navbar-nav me-auto pt-0">
                     <#list sideNavLinks as navlink>
                         <li>
-                            <a href="${mainSideNavLink}/${navlink}" class="navlink">${navlink}</a>
+                            <a href="${mainSideNavLink}/${navlink?keep_before(' ')}" class="navlink">${navlink}</a>
                         </li>
                     </#list>
                 </ul>
