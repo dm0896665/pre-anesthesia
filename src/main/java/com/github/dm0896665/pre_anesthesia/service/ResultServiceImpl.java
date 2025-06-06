@@ -9,9 +9,9 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
-@Service
+//@Service
 public class ResultServiceImpl implements IResultService {
-    @Autowired
+    //@Autowired
     private ResultRepository resultRepo;
 
     public List<Result> getResults() {
