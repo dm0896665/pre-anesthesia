@@ -30,6 +30,6 @@
 </div>
 </div>
 
-<link rel="stylesheet" href="/css/financial-timeline-graph.css" />
+<link rel="stylesheet" href="/css/financial_timeline_graph/financial-timeline-graph.css" />
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.2.0/dist/chart.umd.min.js"></script>
 <script type="module" src="/js/financial_timeline_graph/financial-timeline-graph.js"></script>

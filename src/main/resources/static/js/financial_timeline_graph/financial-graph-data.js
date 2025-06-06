@@ -66,7 +66,7 @@ export class FinancialGraphData {
         // Fetch data and from server
         let financialGraphData;
         try {
-            const response = await fetch('/CareerPathways/financialGraphData');
+            const response = await fetch('/financialTimelineGraph/financialGraphData');
             financialGraphData = await response.json();
         } catch (error) {
             console.error('Error fetching data:', error);
@@ -93,7 +93,7 @@ export class FinancialGraphData {
         // Only fetch the data from the server if we need to
         if (FinancialGraphData.fetchedFinancialMapData.size == 0) {
             try {
-                const response = await fetch('/CareerPathways/financialMap');
+                const response = await fetch('/financialTimelineGraph/financialMap');
                 const responseJSON = await response.json();
 
                 // Assign received data to the static variable to be reused later

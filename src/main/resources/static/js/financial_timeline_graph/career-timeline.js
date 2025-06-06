@@ -12,7 +12,7 @@ export class CareerTimeline {
     static async fetchCareerTimelineData() {
         if (CareerTimeline.fetchedCareerTimelineData.size == 0) {
             try {
-                const response = await fetch('/CareerPathways/careerTimelineData');
+                const response = await fetch('/financialTimelineGraph/careerTimelineData');
                 const responseJSON = await response.json();
                 let tempMap = new Map(Object.entries(responseJSON));
                 for (const [key, value] of tempMap) {
