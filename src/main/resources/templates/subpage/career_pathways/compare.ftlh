@@ -24,4 +24,5 @@
 <h2 class="text-center">Financial Timeline</h2>
 <#include "/financialTimelineGraph.ftlh">
 
+<link rel="stylesheet" href="/css/subpage/career_pathways/compare.css" />
 </@layout.careerPathwaysSubpage>

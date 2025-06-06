@@ -5,14 +5,23 @@
     display: block;
 }
 
+/* For mobile only */
 @media only screen and (max-width: 991px) {
     #educations {
         display: none;
     }
 }
 
+/* For Desktop only */
 @media only screen and (min-width: 992px) {
     #education-value {
         display: none;
+    }
+}
+
+/* For Desktop only */
+@media only screen and (min-width: 992px) {
+    .main-content {
+        font-size: 150%;
     }
 }

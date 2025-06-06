@@ -1,7 +1,20 @@
-#subpage-cont {
+#subpage-container {
     background-color: whitesmoke;
 }
 
 #subpage-title {
     color: #3A8DE6;
+}
+
+/* For Desktop only */
+@media only screen and (min-width: 992px) {
+    #subpage-content,
+    #subpage-content > h1,
+    #subpage-content > h2,
+    #subpage-content > h3,
+    #subpage-content > h4,
+    #subpage-content > h5,
+    #subpage-content > h6 {
+        font-size: 150%;
+    }
 }
