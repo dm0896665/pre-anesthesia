@@ -15,18 +15,18 @@ public class ResultServiceImpl implements IResultService {
     private ResultRepository resultRepo;
 
     public List<Result> getResults() {
-        return resultRepo.findAll();
+        return null;//return resultRepo.findAll();
     }
 
     @Override
     public Integer addResult(Result result) {
-        Result saved = resultRepo.save(result);
+        Result saved = null;//resultRepo.save(result);
         return saved.getUid();
     }
 
     @Override
     public Result getResult(Integer resultID) {
-        Optional<Result> result = resultRepo.findById(resultID);
+        Optional<Result> result = null;//resultRepo.findById(resultID);
         if (result.isPresent() && !result.isEmpty()) {
             return result.get();
         } else {

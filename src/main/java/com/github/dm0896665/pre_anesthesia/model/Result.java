@@ -13,19 +13,19 @@ import jakarta.persistence.Table;
 
 import java.util.List;
 
-@Entity
-@Table(name="results")
+//@Entity
+//@Table(name="results")
 public class Result {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+//    @Id
+//    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int uid;
 
-    @Enumerated(EnumType.STRING)
-    @Column(name="resourceType")
+//    @Enumerated(EnumType.STRING)
+//    @Column(name="resourceType")
     private Education education;
 
-    @ElementCollection
-    @Enumerated(EnumType.STRING)
+//    @ElementCollection
+//    @Enumerated(EnumType.STRING)
     private List<State> states;
 
     private boolean isMostKnowledgeable;
