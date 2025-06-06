@@ -31,11 +31,10 @@
 <p>DNAP school is 3 years with through the National Board of Certification and Recertification for Nurse Anesthetists (<a href="https://www.nbcrna.com/" target="_blank">NBCRNA</a>).</p>
 
 <h4 id="Costs-Salary">Costs/ Salary</h4>
-<ul>
-<li>$45,000 BSN <a href="https://www.missouristate.edu/Nursing/Undergraduate/costs.htm" target="_blank">Estimated Costs - Bachelor of Science in Nursing - School of Nursing - Missouri State</a></li>
-<li>$140,000 DNAP = <a href="https://www.missouristate.edu/Anesthesia/dnap/Costs.htm" target="_blank">Costs and Benefits - Doctor of Nurse Anesthesia Practice - School of Anesthesia - Missouri State</a> + $19,000 for room and board. <a href="https://finaid.umkc.edu/affordability/medicine-cost-estimate.html" target="_blank">Medicine Estimated Costs | Financial Aid and Scholarships | University of Missouri - Kansas City</a></li>
-    <li>$185,000 total.</li>
-</ul>
+<p class="mb-1">-<a href="https://www.missouristate.edu/Nursing/Undergraduate/costs.htm" target="_blank">$45,000 undergraduate school</a></p>
+<p class="mb-1">-<a href="https://www.missouristate.edu/Anesthesia/dnap/Costs.htm" target="_blank">$140,000 DNAP</a> = $83,000 Tuition + $57,000 Room and board for 3 years</p>
+<hr class="w-50 mt-0 mb-1" />
+<p>$185,000 Total Cost</p>
 <p>One of the benefits of being a CRNA is the critical care work between your BSN and DNAP school can help cover some of the costs of your school since ICU nurses make an average of $70,000 a year <a href="https://www.nursingprocess.org/icu-nurse-salary.html" target="_blank">ICU Nurse Salary By State – (2025 Figures)</a>.</p>
 <p>Pay is great for CRNAs with a starting salary at $200,000 and capping at $300,000 in an Anesthesia Care Team (ACT) Model and $400,000 in the states you can practice independently. <a href="https://nursejournal.org/nurse-anesthetist/crna-supervision-requirements/" target="_blank">CRNA Supervision Requirements By State | NurseJournal.org</a></p>
 

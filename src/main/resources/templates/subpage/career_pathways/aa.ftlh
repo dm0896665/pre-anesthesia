@@ -27,6 +27,10 @@
 <p>Applications are submitted on <a href="https://casaa.cas.myliaison.com/" target="_blank">CASAA</a> with various schools starting in the Spring, Fall, and Summer semesters.</p>
 
 <h4 id="Costs-Salary">Costs/ Salary</h4>
+<p class="mb-1">-<a href="https://educationdata.org/average-cost-of-college" target="_blank">$40,000 undergraduate school</a></p>
+<p class="mb-1">-$155,000= -$115,000 Tuition + -$40,000 Room and Board for 2.5 years</p>
+<hr class="w-50 mt-0 mb-1" />
+<p>$195,000 Total Cost</p>
 <p>The average cost to attend a 4-year state school is around <a href="https://www.businessinsider.com/personal-finance/student-loans/average-college-tuition" target="_blank">$40,000</a>. The cost to attend an MSA program in-state without scholarships is approximately <a href="https://www.umkc.edu/cashiers/tuition-fees/graduate-and-professional-programs.html" target="_blank">$115,000</a>. This does not cover room and board, which could easily be another $40,000, depending on your living situation. The total cost to attend goes to <strong>$195,000</strong>.</p>
 <p>Seems like a lot, and it is, but these costs are offset by a starting salary of <a href="https://www.gaswork.com/search/Anesthesiologist-Assistants/Job" target="_blank">$200,000</a> and starting bonuses of <strong>$50,000-$100,000</strong> with tuition reimbursement available too. Living like you did in school, you can easily pay off your student loans within 2 years of working.</p>
 

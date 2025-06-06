@@ -36,11 +36,10 @@
 <p>While not required, Anesthesiologists can specialize with a <a href="https://www.asahq.org/education-and-career/asa-resident-component/residentfellows-in-training/fellowship-opportunities" target="_blank">one-year fellowship</a> in fields such as cardiac, critical care, and pediatrics.</p>
 
 <h4 id="Costs-Salary">Costs/ Salary</h4>
-<ul>
-    <li>$40,000 undergraduate school</li>
-    <li>$300,000 medical school</a></li>
-</ul>
-<p>$340,000 to graduate medical school.</p>
+<p class="mb-1">-<a href="https://educationdata.org/average-cost-of-college" target="_blank">$40,000 undergraduate school</a></p>
+<p class="mb-1">-<a href="https://finaid.umkc.edu/affordability/medicine-cost-estimate.html" target="_blank">$300,000 medical school</a></p>
+<hr class="w-50 mt-0 mb-1" />
+<p>$340,000 Total Cost</p>
 <p>A benefit of residency is when you start <a href="https://gme.wustl.edu/policies-procedures/stipends/" target="_blank">making some money</a>.</p>
 <p>$70,000 PGY 1</p>
 <p>$73,000 PGY 2</p>
