@@ -8,10 +8,10 @@ import lombok.NoArgsConstructor;
 import java.util.List;
 import java.util.stream.Collectors;
 
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
-@Builder
+//@Data
+//@AllArgsConstructor
+//@NoArgsConstructor
+//@Builder
 public class ResultFormSubmission {
     private String education;
     private List<String> states;
