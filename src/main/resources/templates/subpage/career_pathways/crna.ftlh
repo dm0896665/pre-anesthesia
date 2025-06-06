@@ -32,7 +32,7 @@
 
 <h4 id="Costs-Salary">Costs/ Salary</h4>
 <p class="mb-1">-<a href="https://www.missouristate.edu/Nursing/Undergraduate/costs.htm" target="_blank">$45,000 undergraduate school</a></p>
-<p class="mb-1">-<a href="https://www.missouristate.edu/Anesthesia/dnap/Costs.htm" target="_blank">$140,000 DNAP</a> = $83,000 Tuition + $57,000 Room and board for 3 years</p>
+<p class="mb-1">-$140,000 DNAP = <a href="https://www.missouristate.edu/Anesthesia/dnap/Costs.htm" target="_blank">$83,000 Tuition</a> + <a href="https://finaid.umkc.edu/affordability/medicine-cost-estimate.html" target="_blank">$57,000 Room and board for 3 years</a></p>
 <hr class="w-50 mt-0 mb-1" />
 <p>$185,000 Total Cost</p>
 <p>One of the benefits of being a CRNA is the critical care work between your BSN and DNAP school can help cover some of the costs of your school since ICU nurses make an average of $70,000 a year <a href="https://www.nursingprocess.org/icu-nurse-salary.html" target="_blank">ICU Nurse Salary By State – (2025 Figures)</a>.</p>
