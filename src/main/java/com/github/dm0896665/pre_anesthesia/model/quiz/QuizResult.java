@@ -58,8 +58,8 @@ public class QuizResult {
 
     public WorkPointWinner getWorkPointWinner() {
         WorkPointWinner winner = WorkPointWinner.fromCode(getPointTotalMapWinner(workTotals));
-        if (getPathwayPointWinner() != PathwayPointWinner.CRNA && (winner == WorkPointWinner.EYE || winner == WorkPointWinner.KETAMINE)) {
-            return WorkPointWinner.fromCode(getPointTotalMapWinner(workTotals, true));
+        if (getPathwayPointWinner() != PathwayPointWinner.CRNA && isCRNAOnlyWork(winner)) {
+            return WorkPointWinner.fromCode(getPointTotalMapRunnerUp(workTotals));
         }
 
         return winner;
@@ -70,38 +70,46 @@ public class QuizResult {
     }
 
     public boolean hasPathwayPointRunnerUp() {
-        return !"".equals(getPointTotalMapWinner(pathwayTotals, true));
+        return !"".equals(getPointTotalMapRunnerUp(pathwayTotals));
     }
 
     public boolean hasWorkPointRunnerUp() {
-        return !"".equals(getPointTotalMapWinner(workTotals, true));
+        return !"".equals(getPointTotalMapRunnerUp(workTotals));
     }
 
     public boolean hasModelPointRunnerUp() {
         if (getPathwayPointWinner() == PathwayPointWinner.AA && getModelPointWinner() != ModelPointWinner.ACT) {
             return true;
         }
-        return !"".equals(getPointTotalMapWinner(modelTotals, true));
+        return !"".equals(getPointTotalMapRunnerUp(modelTotals));
     }
 
     public String getPathwayPointRunnerUp() {
-        PathwayPointWinner runnerUp = PathwayPointWinner.fromCode(getPointTotalMapWinner(pathwayTotals, true));
+        PathwayPointWinner runnerUp = PathwayPointWinner.fromCode(getPointTotalMapRunnerUp(pathwayTotals));
         return runnerUp.getArticle().toLowerCase() + " " + runnerUp.getName();
     }
 
     public String getWorkPointRunnerUp() {
-        WorkPointWinner runnerUp = WorkPointWinner.fromCode(getPointTotalMapWinner(workTotals));
-        if (getPathwayPointWinner() != PathwayPointWinner.CRNA && (runnerUp == WorkPointWinner.EYE || runnerUp == WorkPointWinner.KETAMINE)) {
-            return WorkPointWinner.fromCode(getPointTotalMapWinner(workTotals)).toString();
+        WorkPointWinner winner = WorkPointWinner.fromCode(getPointTotalMapWinner(workTotals));
+        if (getPathwayPointWinner() != PathwayPointWinner.CRNA && isCRNAOnlyWork(winner)) {
+            String runnerUpString = WorkPointWinner.fromCode(getPointTotalMapWinner(workTotals)).toString();
+            if (PathwayPointWinner.fromCode(getPathwayPointRunnerUp()) != PathwayPointWinner.CRNA) {
+                return runnerUpString + " (CRNA Only)";
+            }
+            return runnerUpString;
         }
-        return WorkPointWinner.fromCode(getPointTotalMapWinner(workTotals, true)).toString();
+        return WorkPointWinner.fromCode(getPointTotalMapRunnerUp(workTotals)).toString();
+    }
+
+    private boolean isCRNAOnlyWork(WorkPointWinner winner) {
+        return winner == WorkPointWinner.EYE || winner == WorkPointWinner.KETAMINE;
     }
 
     public String getModelPointRunnerUp() {
         if (getPathwayPointWinner() == PathwayPointWinner.AA && getModelPointWinner() != ModelPointWinner.ACT) {
             return getModelPointWinner().toString();
         }
-        return ModelPointWinner.fromCode(getPointTotalMapWinner(modelTotals, true)).toString();
+        return ModelPointWinner.fromCode(getPointTotalMapRunnerUp(modelTotals)).toString();
     }
 
     public String getWinningString() {
@@ -119,7 +127,11 @@ public class QuizResult {
     }
 
     private String getPointTotalMapWinner( Map<String, Integer> pointTotalMap) {
-        return getPointTotalMapWinner(pointTotalMap, false);
+        return getPointTotalMapRunnerUp(pointTotalMap);
+    }
+
+    private String getPointTotalMapRunnerUp( Map<String, Integer> pointTotalMap) {
+        return getPointTotalMapRunnerUp(pointTotalMap);
     }
 
     private String getPointTotalMapWinner( Map<String, Integer> pointTotalMap, boolean isGetRunnerUp) {
