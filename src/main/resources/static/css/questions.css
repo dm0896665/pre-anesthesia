@@ -1,3 +1,4 @@
+/*
 #education-value {
     width: 100%;
     text-align: center;
@@ -5,23 +6,49 @@
     display: block;
 }
 
-/* For mobile only */
 @media only screen and (max-width: 991px) {
     #educations {
         display: none;
     }
 }
 
-/* For Desktop only */
 @media only screen and (min-width: 992px) {
     #education-value {
         display: none;
     }
 }
+*/
 
 /* For Desktop only */
 @media only screen and (min-width: 992px) {
     .main-content {
         font-size: 150%;
     }
+    .info-text {
+        font-size: 100%;
+    }
+}
+
+/* For Mobile only */
+@media only screen and (max-width: 991px) {
+    #question {
+        font-size: 130%;
+    }
+}
+
+#quiz-container {
+    min-height: 50vh;
+}
+
+#previous-btn, #next-submit-btn {
+    position: absolute;
+    bottom: 1rem;
+}
+
+#previous-btn {
+    left: 1rem;
+}
+
+#next-submit-btn {
+    right: 1rem;
 }
