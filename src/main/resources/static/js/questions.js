@@ -150,6 +150,7 @@ function updateImage(currentQuestion) {
         imageElement.alt = currentQuestion.imageDescription;
         imageElement.classList.add("pt-1");
         imageElement.classList.add("pb-3");
+        imageElement.classList.add("mw-100");
         img.appendChild(imageElement);
     }
 }
