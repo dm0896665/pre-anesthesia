@@ -127,11 +127,11 @@ public class QuizResult {
     }
 
     private String getPointTotalMapWinner( Map<String, Integer> pointTotalMap) {
-        return getPointTotalMapRunnerUp(pointTotalMap);
+        return getPointTotalMapWinner(pointTotalMap, false);
     }
 
     private String getPointTotalMapRunnerUp( Map<String, Integer> pointTotalMap) {
-        return getPointTotalMapRunnerUp(pointTotalMap);
+        return getPointTotalMapWinner(pointTotalMap, true);
     }
 
     private String getPointTotalMapWinner( Map<String, Integer> pointTotalMap, boolean isGetRunnerUp) {
