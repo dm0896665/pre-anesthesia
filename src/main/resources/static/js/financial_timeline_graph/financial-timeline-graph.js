@@ -102,7 +102,9 @@ async function initializeYearDropdown() {
         let startYear = +document.getElementById('start-year-menu').value;
         let durationMenu = document.getElementById('duration-menu');
         let currentDuration = Math.round(+JSON.stringify(JSON.parse(""+durationMenu.value)) / 5) * 5; // Gets the current duration rounded to the nearest multiple of 5
-
+        if (currentDuration == 0) {
+            currentDuration+=5;
+        }
         // Update duration with new start year
         setYearDurationDropdown(startYear);
 
