@@ -6,7 +6,7 @@
 </figure>
 
 <h4 id="Role">Role</h4>
-<p>Anesthesiologists evaluate, monitor, and supervise patient care before, during, and after surgery, delivering anesthesia, leading the Anesthesia Care Team, and ensuring optimal patient safety. Anesthesiologists specialize in anesthesia care, pain management, and critical care medicine.</p>
+<p>Anesthesiologists are physicians who evaluate, monitor, and supervise patient care before, during, and after surgery, delivering anesthesia, leading the Anesthesia Care Team, and ensuring optimal patient safety. Anesthesiologists specialize in anesthesia care, pain management, and critical care medicine.</p>
 
 <h4 id="JobDuties">Job Duties</h4>
 <ul>
@@ -33,7 +33,7 @@
 <p>Students who match into 4-year anesthesiology residency programs average a <a href="https://blog.amboss.com/us/average-2024-usmle-step-2-match-scores-by-medical-specialty" target="_blank">252 (63rd percentile) on the Step 2 exam</a>. The Step 1 exam is pass/fail, so there is more emphasis on the Step 2 exam scores.</p>
 <p>There are currently <a href="https://www.residencyprogramslist.com/anesthesiology" target="_blank">1800 PGY-1 (postgraduate year-1) positions in the 189 anesthesiology programs</a>. 75% of matched applicants are from an M.D. school.</p>
 <p>During and after residency, anesthesiologists take <a href="https://www.theaba.org/begin-certification/" target="_blank">board exams</a> through the American Board of Anesthesiology (ABA).</p>
-<p>While not required, Anesthesiologists can specialize with a <a href="https://www.asahq.org/education-and-career/asa-resident-component/residentfellows-in-training/fellowship-opportunities" target="_blank">one-year fellowship</a> in fields such as cardiac, critical care, and pediatrics.</p>
+<p>While not required, Anesthesiologists can subspecialize with a <a href="https://www.asahq.org/education-and-career/asa-resident-component/residentfellows-in-training/fellowship-opportunities" target="_blank">one-year fellowship</a> in fields such as cardiac anesthesia, critical care anesthesia, pediatric anesthesia, obstetric anesthesia, and regional anesthesia.</p>
 
 <h4 id="Costs-Salary">Costs/ Salary</h4>
 <p class="mb-1">-<a href="https://educationdata.org/average-cost-of-college" target="_blank">$40,000 undergraduate school</a></p>
